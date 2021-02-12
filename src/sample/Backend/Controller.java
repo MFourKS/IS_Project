@@ -94,7 +94,6 @@ public class Controller {
             System.exit(0);
         });
 
-
     }
 
 
@@ -112,7 +111,5 @@ public class Controller {
                 stage.setScene(new Scene(root));
                 count++;
                 stage.show();
-
         }
-
 }

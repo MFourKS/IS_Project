@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Backend.newGame">
+    <children>
+      <ImageView fitHeight="800.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../sample/media/svitok_1.png" />
+         </image>
+      </ImageView>
+      <Group blendMode="COLOR_BURN" layoutX="146.0" layoutY="514.0">
+         <children>
+            <RadioButton fx:id="morkou" mnemonicParsing="false" selected="true" text="Моркоу Железобетонссон">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="samael" layoutX="319.0" mnemonicParsing="false" text="Сэмюэль Ваймс" toggleGroup="$group" />
+            <RadioButton fx:id="colon" layoutX="599.0" mnemonicParsing="false" text="Фред Колон" toggleGroup="$group" />
+         </children>
+      </Group>
+      <Label layoutX="361.0" layoutY="132.0" text="Новая игра">
+         <font>
+            <Font name="Yu Gothic Medium" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="424.0" fitWidth="232.0" layoutX="113.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/media/captain.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="294.0" fitWidth="305.0" layoutX="367.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/media/commander.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="294.0" fitWidth="201.0" layoutX="696.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/media/sergant.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="home" fitHeight="66.0" fitWidth="243.0" layoutX="213.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/media/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="173.0" layoutX="588.0" layoutY="574.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sample/media/beginGames.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
